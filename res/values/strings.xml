@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SBU Computer Science</string>
+    <string name="menu_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_video_list">VideoListActivity</string>
+    <string name="error_player">Error Playing Video</string>
+    <string name="title_activity_nfc">NFCActivity</string>
+    <string name="title_activity_senior">SeniorActivity</string>
+    <string name="title_activity_senior_desc">SeniorDesc</string>
+    <string name="title_activity_map">MapActivity</string>
+
+</resources>

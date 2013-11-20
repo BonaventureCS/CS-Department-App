@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+      android:background="#FFE7BA"
+    tools:context=".NFCActivity" >
+
+<ListView
+    android:id="@id/android:list"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/linearLayout1"
+    android:background="#FFE7BA"
+    android:layout_centerHorizontal="true" >
+
+    </ListView>
+
+<LinearLayout
+    android:id="@+id/linearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:background="#FFE7BA"
+    android:gravity="bottom"
+    android:orientation="horizontal"
+    android:paddingBottom="10dp" >
+
+    <Button
+        android:id="@+id/btnHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.33"
+        android:background="#000000"
+        android:onClick="onSelectFragment"
+        android:text="Home"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btnVideos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.33"
+        android:background="#000000"
+        android:text="Videos"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btnNFC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.33"
+        android:background="#000000"
+        android:text="NFC Hunt"
+        android:textColor="#FFFFFF" />
+</LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7C2B1A"
+    android:orientation="vertical" >
+
+       <TextView
+           android:id="@+id/textView1"
+           android:layout_below="@+id/video"
+           android:layout_width="match_parent"
+           android:layout_height="fill_parent"
+           android:gravity="center"
+           android:text="This event is one of our finest. The goal is to go around looking for clues and using the NFC scanner to point you to the next one. "
+           android:textAppearance="?android:attr/textAppearanceMedium"
+           android:textColor="#FFFFFF" />
+
+       <VideoView
+           android:id="@+id/video"
+           android:layout_width="wrap_content"
+           android:layout_height="300dp"
+           android:layout_alignParentLeft="true"
+           android:layout_alignParentTop="true" />
+
+</RelativeLayout>

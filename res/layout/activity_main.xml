@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/fragPlaceholder"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linearLayout1"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/linearLayout1"
+        android:background="#7C2B1A"
+        android:orientation="vertical" >
+        
+            <Button
+        android:id="@+id/directory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:background = "#FFD700"
+        android:textColor= "#FFFFFF"
+        android:text="Directory" />
+
+    <Button
+        android:id="@+id/alumni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView1"
+        android:layout_alignParentLeft="true"
+        android:background = "#FFD700"
+        android:textColor= "#FFFFFF"
+        android:text="Alumni" />
+
+    <Button
+        android:id="@+id/careers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:background = "#FFD700"
+        android:textColor= "#FFFFFF"
+        android:text="Careers" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/directory"
+        android:layout_alignBottom="@+id/directory"
+        android:layout_alignRight="@+id/careers"
+        android:background = "#FFD700"
+        android:textColor= "#FFFFFF"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/careers"
+        android:layout_alignParentRight="true"
+        android:background = "#FFD700"
+        android:textColor= "#FFFFFF"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button4"
+        android:layout_alignBottom="@+id/button4"
+        android:layout_alignParentRight="true"
+        android:background = "#FFD700"
+        android:textColor= "#FFFFFF"
+        android:text="Button" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:background="#FFD700"
+        android:gravity="bottom"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnHome"
+            android:layout_weight="0.33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:onClick="onSelectFragment"
+            android:text="Home"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnVideos"
+            android:layout_weight="0.33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:onClick="onSelectFragment"
+            android:text="Videos"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnFrag02"
+            android:layout_weight="0.33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:onClick="onSelectFragment"
+            android:text="NFC Hunt"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+</RelativeLayout>

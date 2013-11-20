@@ -1,0 +1,50 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+       android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+       android:background="#FFE7BA">
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFE7BA"
+   
+    tools:context=".AlumniDesc" >
+
+        <ImageView
+            android:id="@+id/alumImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/txtName"
+            android:adjustViewBounds="true"
+            android:maxHeight="240dp"
+            android:maxWidth="240dp"
+            android:src="@drawable/bonas" />
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:text="kh"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:paddingBottom="15dp"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_below="@+id/alumImage"
+       
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="135dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+         android:paddingTop="30dp"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+</RelativeLayout>
+</ScrollView>
