@@ -175,4 +175,21 @@ public class Helper extends SQLiteOpenHelper {
 				.rawQuery("SELECT name, pic, info FROM seniors WHERE _id=?", args));
 	}
 	
+	public Cursor getClueCursor(){
+		SQLiteQueryBuilder queryBuilder = new SQLiteQueryBuilder();
+		queryBuilder.setTables("clues");
+		String[] asColumnsToReturn = new String[] {"_id", "name", "enable"};
+		Cursor mCursor = queryBuilder.query(dbSqlite, asColumnsToReturn, null, null, null, null, null);
+		return mCursor;
+	}
+	public Cursor getClueDescription(String clue){
+		Cursor mCursor = dbSqlite.query(true, "clues", new String[] {
+				"name", "description"}, "name = \"" +  clue + "\"",
+				null, null, null, null, null);
+		if (mCursor != null) {
+			mCursor.moveToFirst();
+		}
+		return mCursor;
+	}
+	
 }

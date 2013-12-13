@@ -40,11 +40,12 @@
             android:name="com.example.sbucomputersciencev1_1.VideoListActivity"
             android:label="@string/title_activity_video_list" >
         </activity>
-        <activity android:name="com.example.sbucomputersciencev1_1.SplashActivity"
-              android:theme="@android:style/Theme.NoTitleBar" >
-            
+        <activity
+            android:name="com.example.sbucomputersciencev1_1.SplashActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -61,6 +62,13 @@
         <activity
             android:name="com.example.sbucomputersciencev1_1.NFCActivity"
             android:label="@string/title_activity_nfc" >
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
         </activity>
         <activity
             android:name="com.example.sbucomputersciencev1_1.SeniorActivity"
@@ -78,6 +86,11 @@
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.example.sbucomputersciencev1_1.ClueActivity"
+            android:label="@string/title_activity_clue" >
+        </activity>
     </application>
 
 </manifest>

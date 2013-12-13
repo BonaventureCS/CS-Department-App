@@ -36,6 +36,7 @@ public class MapActivity extends Activity {
 		// place marker over walsh
 		map1.addMarker(new MarkerOptions().title("Walsh")
 				.snippet("The finest building at Bonas.").position(walsh));
+		
 
 	}
 

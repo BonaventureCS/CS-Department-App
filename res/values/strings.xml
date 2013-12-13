@@ -10,5 +10,6 @@
     <string name="title_activity_senior">SeniorActivity</string>
     <string name="title_activity_senior_desc">SeniorDesc</string>
     <string name="title_activity_map">MapActivity</string>
+    <string name="title_activity_clue">ClueActivity</string>
 
 </resources>

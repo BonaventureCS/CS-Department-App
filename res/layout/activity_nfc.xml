@@ -6,7 +6,7 @@
     tools:context=".NFCActivity" >
 
 <ListView
-    android:id="@id/android:list"
+    android:id="@+id/clueList"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_below="@+id/linearLayout1"
@@ -54,5 +54,13 @@
         android:text="NFC Hunt"
         android:textColor="#FFFFFF" />
 </LinearLayout>
+
+<TextView
+    android:id="@+id/text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:text="TextView" />
 
 </RelativeLayout>
